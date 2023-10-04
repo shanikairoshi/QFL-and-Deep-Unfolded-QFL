@@ -1,6 +1,11 @@
 ## Towards QFL with Deep-Unfolding Network
 This repository comprises all the works related to the quantum federated aggregation strategy, applying novel strategies to enhance the aggregated model performance.
+
+Study 01:
 <img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/QFLAggAnalysisTax.png" width="500"/>
+
+Integrating quantum principles into well-established technical fields is an emerging area of focus.
+Consequently, the field of federated learning has witnessed the emergence of quantum aspects, giving rise to what is known as quantum federated learning. In this research endeavour, our primary focus is a critical analysis of quantum federated aggregation and evaluating promising outcomes to enhance the aggregation task. Our principal objective involves the development of a qiskit-based environment tailored for the federated setting a feature that is currently unavailable followed by a meticulous examination of its applicability within federated contexts. Operating on the assumption that a simplified qubit structure, grounded in the reduced dimensionality of selected datasets, may yield favourable results within a constrained number of clients, our experimental approach is structured accordingly. Our findings demonstrate that the qiskit architecture can be effectively harnessed, subject to specific criteria, to improve Quantum Federated Learning (QFL) aggregation performance. Our objectives encompass enhancing our experiments and proposing optimal approaches to bolster performance. These include exploring novel gradient-free aggregation processes, optimization methods based on deep unfolding, and the management of diverse client contributions within supervised and unsupervised environments.
 ## Requirements
 
 This code is implemented in 
