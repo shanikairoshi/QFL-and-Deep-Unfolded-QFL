@@ -28,7 +28,8 @@ Fashion MNIST is a dataset comprising 70,000 grayscale images, divided into trai
 - Dimensionality Reduction
 The dimension of the data corresponds to the number of qubits required in order to encode the data for the quantum feature maps. Since quantum computers today can only manipulate 50 qubits, we cannot work with large number of qubits like 784; therefore encoding data with dimension 784 is not viable.
 Therefore, we will have to make use of the truncated Singular Value Decomposition (SVD) and t-distributed stochastic neighbor embedding (t-SNE) methods to reduce the dimension down to 10 and then to 2.
-![image](https://github.com/shanikairoshi/QFL-with-DUN/Figures/DimensionExtraction_Mnist.png)
+
+![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/DimensionExtraction_Mnist.png)
 
 ## Results
 
