@@ -30,13 +30,13 @@ The dimension of the data corresponds to the number of qubits required in order 
 Therefore, we will have to make use of the truncated Singular Value Decomposition (SVD) and t-distributed stochastic neighbor embedding (t-SNE) methods to reduce the dimension down to 10 and then to 2.
 
 ## Results
-    I). Change the optimizers in between COBYLA, SPSA, SLSQP, CMA-ES.
+- Change the optimizers in between COBYLA, SPSA, SLSQP, CMA-ES.
     ![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitMnist.png)
     
-    II). Change the Circuit structure as TwoLocal, RealAmplitude, and EfficientSU2.
+- Change the Circuit structure as TwoLocal, RealAmplitude, and EfficientSU2.
     ![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/Optimizer.png)
     
-    III). Change the feature maps as zfeaturemap, zzfeaturemap, and paulifeaturemap.
+- Change the feature maps as zfeaturemap, zzfeaturemap, and paulifeaturemap.
     ![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitAndFMMnist.png)
 
 
