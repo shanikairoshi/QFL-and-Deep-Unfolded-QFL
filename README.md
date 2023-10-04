@@ -7,7 +7,7 @@ This repository comprises all the works related to the quantum federated aggrega
 
 Settings: 
     
-    I). Change the optimizers in between COBYLA, SPSA,SLSQP, CMA-ES.
+    I). Change the optimizers in between COBYLA, SPSA, SLSQP, CMA-ES.
     
     II). Change the Circuit structure as TwoLocal, RealAmplitude, and EfficientSU2.
     
@@ -22,6 +22,10 @@ The MNIST dataset has a total of 60,000 data points (rows in train_data) corresp
 2. Fashion Mnist
 
 Fashion MNIST is a dataset comprising 70,000 grayscale images, divided into training and testing sets of 60,000 and 10,000 images respectively, with each image representing a 28x28-pixel grayscale depiction of various fashion items, such as shoes, dresses, and trousers, among others
+
+--Dimensionality Reduction--
+The dimension of the data corresponds to the number of qubits required in order to encode the data for the quantum feature maps. Since quantum computers today can only manipulate 50 qubits, we cannot work with large number of qubits like 784; therefore encoding data with dimension 784 is not viable.
+Therefore, we will have to make use of the truncated Singular Value Decomposition (SVD) and t-distributed stochastic neighbor embedding (t-SNE) methods to reduce the dimension down to 10 and then to 2.
 
 --Results--
 
