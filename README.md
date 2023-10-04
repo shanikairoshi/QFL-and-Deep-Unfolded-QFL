@@ -1,7 +1,13 @@
-## QFL with Deep-Unfolding Network
+## Towards QFL with Deep-Unfolding Network
 This repository comprises all the works related to the quantum federated aggregation strategy, applying novel strategies to enhance the aggregated model performance.
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/QFLAggAnalysisTax.png" width="500"/>
+## Requirements
+
+This code is implemented in 
+Python 3.9, using qiskit qasm_simulator, matplotlib and numpy.
 
 ## System setup
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/QFLsurveyVQC.png" width="500" />
 
 01. We evaluate the VQC with different settings and federated aggregation.
 
@@ -31,22 +37,52 @@ Therefore, we will have to make use of the truncated Singular Value Decompositio
 
 ## Results
 - Change the optimizers in between COBYLA, SPSA, SLSQP, CMA-ES.
-    ![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitMnist.png)
-    
+
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/Optimizer.png" width="200" /> <figcaption align = "center"><b>Fig:1 Mnist Data</b></figcaption>
+  
+-Observation 1: COBYLA optimizer outperforms the SPSA optimizer significantly. We employed these two optimizers to assess gradient-based and gradient-free optimization settings, with SPSA representing the gradient-based approach and COBYLA representing the gradient-free method. Ultimately, our findings suggest that employing a gradient-free optimization protocol may yield superior global models in QFL aggregation for both of the datasets utilized in this study.
+
+
 - Change the Circuit structure as TwoLocal, RealAmplitude, and EfficientSU2.
-    ![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/Optimizer.png)
-    
+
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitMnist.png" width="200" /> <img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitFashion.png" width="200" /> <figcaption align = "center"><b>Fig:2 Left figure shows results of mnist data and the right figure shows results of fashion mnist data</b></figcaption>
+  
+-Observation 2: We modified the circuit structure to evaluate the aggregation process, and our observations indicate that the EfficientSU@ circuit structure outperforms the other two methods, namely TwoLocal and RealAmplitude structures, for both experimental datasets.
+  
 - Change the feature maps as zfeaturemap, zzfeaturemap, and paulifeaturemap.
-    ![image](https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitAndFMMnist.png)
 
-
-
-
-
-
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitAndFMMnist.png" width="200" /><img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/CircuitAndFMFashion.png" width="200" /><figcaption align = "center"><b> Fig:3 Left figure shows results of mnist data and the right figure shows results of fashion mnist data</b></figcaption>
+  
+-Observation 3: when testing the feature maps, we found that the ZFeatureMap performs better compared to the other methods, including ZZFeatureMap and PauliFeatureMap.
+## Usage
+You can directly run these Python codes.
 
 ## Why Qiskit?
-
+- <img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/FrameworkDiff.JPG " />
 ## What next?
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/QFLAggComponents.png"  width="500" /><figcaption align = "center"><b> Fig:4 Future Experimental Setup 01</b></figcaption>
+We implement this similar phenomenon as shown in figure 5 into the quantum federated aggregation weighted mechanism to help in unbiased client selection procedure. Moreover, our target is to utilize the unrolling mechanism to develop a significant optimization strategy which may allow us to gain fast and accurate convergence in dynamic environment.
+
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/DUN-QFL%20framworkV2.png"  width="500" /><figcaption align = "center"><b> Fig:5 Future Experimental Setup 02</b></figcaption>
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/Algo1.JPG" width="500"/>
+
+How does quantum federated aggregation handle missing data in a dynamic environment?
+- Problem: Aggregation issues with dynamic and missing data can yield inaccurate global models,
+causing detrimental decision-making, financial losses, and suboptimal resource allocation across various applications.
+These challenges can dissuade organizations from adopting federated machine learning, hindering its potential for innovation.
+Inefficient aggregation and scalability problems lead to high computational costs and slow convergence,
+rendering federated learning impractical for large-scale applications.
+
+- Hypothesis and Solutions: Our overarching objective is to progressively enhance existing research methodologies 
+within the QFL framework by incorporating strategies for addressing the issue of missing data and promoting data reconstruction phenomena.
+In this endeavor, we aim to bridge the gap between classical machine learning techniques and the unique requirements of quantum federated learning,
+thereby contributing to the advancement of this emerging field.
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/PhDRQ3.drawio.png" width="500"/>
+<img src="https://github.com/shanikairoshi/QFL-with-DUN/blob/main/Figures/Algo2.JPG" width="500"/>
 
 ## Aknowledgement
+
+Basic knowledge extracted from:
+
+- https://www.qmunity.tech/tutorials/building-a-variational-quantum-classifier.
+- https://www.youtube.com/watch?v=-sxlXNz7ZxU
