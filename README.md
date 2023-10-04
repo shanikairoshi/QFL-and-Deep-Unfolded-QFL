@@ -1,4 +1,4 @@
-## Towards QFL with Deep-Unfolding Network-Qiskit impelementation
+## Towards QFL with Deep-Unfolding Network-Qiskit implementation
 This repository comprises all the works related to the quantum federated aggregation strategy, applying novel strategies to enhance the aggregated model performance.
 
 Study 01:
